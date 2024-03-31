@@ -58,7 +58,7 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 2,
     "maxDynamicHeight": 9000,
-    "firstDayOfWeek": 0,
+    "firstDayOfWeek": "1",
     "maxDate": "2121-12-31T18:29:00.000Z",
     "minDynamicHeight": 4
 }

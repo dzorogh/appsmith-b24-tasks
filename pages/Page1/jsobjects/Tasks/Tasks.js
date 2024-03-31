@@ -1,8 +1,8 @@
 export default {
 	tasks: [],
 	tasksFormatted: [],
-	startDate: moment(new Date()).startOf('week').format('YYYY-MM-DD'),
-	endDate: moment(new Date()).startOf('week').add('1', 'week').format('YYYY-MM-DD'),
+	startDate: moment(new Date()).day('1').format('YYYY-MM-DD'),
+	endDate: moment(new Date()).day('1').add('1', 'week').format('YYYY-MM-DD'),
 	taskFields: [
 		'ID', 
 		'TITLE', 

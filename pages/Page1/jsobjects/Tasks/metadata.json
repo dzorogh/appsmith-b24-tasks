@@ -17,11 +17,11 @@
       },
       {
         "name": "startDate",
-        "value": "moment(new Date()).startOf('week').format('YYYY-MM-DD')"
+        "value": "moment(new Date()).day('1').format('YYYY-MM-DD')"
       },
       {
         "name": "endDate",
-        "value": "moment(new Date()).startOf('week').add('1', 'week').format('YYYY-MM-DD')"
+        "value": "moment(new Date()).day('1').add('1', 'week').format('YYYY-MM-DD')"
       },
       {
         "name": "taskFields",

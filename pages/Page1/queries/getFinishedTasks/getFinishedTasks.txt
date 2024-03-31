@@ -1,0 +1,11 @@
+{
+	filter: {
+
+		'<=CREATED_DATE': {{Tasks.endDate}},
+		'>=CLOSED_DATE': {{Tasks.startDate}},
+		'RESPONSIBLE_ID': {{Users.users.map(u => u.id)}},
+		'>=STATUS': 4,
+	},
+	select: {{ Tasks.taskFields }},
+	start: {{this.params.next}}
+}

@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "Users",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "headUserId",
+        "value": "5393"
+      },
+      {
+        "name": "mainDepartmentId",
+        "value": "null"
+      },
+      {
+        "name": "users",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_Users",
+  "deleted": false,
+  "gitSyncId": "6606b2e6b295c3387599f3ef_6606b670b295c3387599f415"
+}

@@ -1,0 +1,9 @@
+{
+	filter: {
+		'<=CREATED_DATE': {{Tasks.endDate}},
+		'>=CREATED_DATE': {{Tasks.startDate}},
+		'USER_ID': {{Users.users.map(u => u.id)}},
+	},
+	//select: {{ Tasks.taskFields }},
+	start: {{this.params.next}}
+}

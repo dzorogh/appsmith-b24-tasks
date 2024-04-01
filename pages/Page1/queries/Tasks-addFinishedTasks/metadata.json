@@ -22,9 +22,6 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "startDate"
-        },
-        {
           "name": "userIds"
         }
       ]

@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "Config",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "startDate",
+        "value": "moment(new Date()).day('1').format('YYYY-MM-DD')"
+      },
+      {
+        "name": "endDate",
+        "value": "moment(new Date()).day('7').format('YYYY-MM-DD')"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_Config",
+  "deleted": false,
+  "gitSyncId": "660973bfbef63765e88f048b_660ad2ffbef63765e88f04cd"
+}

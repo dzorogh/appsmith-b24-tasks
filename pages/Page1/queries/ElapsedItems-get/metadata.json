@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "setStartDate",
-    "fullyQualifiedName": "Tasks.setStartDate",
+    "name": "get",
+    "fullyQualifiedName": "ElapsedItems.get",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,17 +14,13 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_Tasks",
+    "collectionId": "Page1_ElapsedItems",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "value"
-        }
-      ]
+      "jsArguments": []
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -39,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-31T14:38:06Z"
+    "createdAt": "2024-04-01T15:29:58Z"
   },
-  "id": "Page1_Tasks.setStartDate",
+  "id": "Page1_ElapsedItems.get",
   "deleted": false,
-  "gitSyncId": "660973bfbef63765e88f048b_6609754ebef63765e88f04af"
+  "gitSyncId": "660973bfbef63765e88f048b_660ad2f6bef63765e88f04c7"
 }

@@ -1,9 +1,21 @@
 {
-	filter: {
-		'<=CREATED_DATE': {{Tasks.endDate}},
-		'>=CREATED_DATE': {{Tasks.startDate}},
+	ORDER: {
+		ID: 'ASC'
+	},
+	
+	FILTER: {
+		'<=CREATED_DATE': {{Config.endDate}},
+		'>=CREATED_DATE': {{Config.startDate}},
 		'USER_ID': {{Users.users.map(u => u.id)}},
 	},
-	//select: {{ Tasks.taskFields }},
-	start: {{this.params.next}}
+	
+	SELECT: ['*'],
+
+	PARAMS: {
+		NAV_PARAMS: {
+			nPageSize: {{ this.params.perPage }},
+			iNumPage: {{ this.params.page }}
+		}
+	},
+
 }

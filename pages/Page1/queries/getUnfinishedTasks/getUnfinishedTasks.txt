@@ -1,6 +1,6 @@
 {
 	filter: {
-		'<=CREATED_DATE': {{Tasks.endDate}},
+		'<=CREATED_DATE': {{Config.endDate}},
 		'<=STATUS': 3,
 		'RESPONSIBLE_ID': {{Users.users.map(u => u.id)}},
 	},

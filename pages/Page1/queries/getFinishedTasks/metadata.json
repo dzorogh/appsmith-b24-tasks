@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\tfilter: {\n\n\t\t'<=CREATED_DATE': {{Tasks.endDate}},\n\t\t'>=CLOSED_DATE': {{Tasks.startDate}},\n\t\t'RESPONSIBLE_ID': {{Users.users.map(u => u.id)}},\n\t\t'>=STATUS': 4,\n\t},\n\tselect: {{ Tasks.taskFields }},\n\tstart: {{this.params.next}}\n}",
+      "body": "{\n\tfilter: {\n\n\t\t'<=CREATED_DATE': {{Config.endDate}},\n\t\t'>=CLOSED_DATE': {{Config.startDate}},\n\t\t'RESPONSIBLE_ID': {{Users.users.map(u => u.id)}},\n\t\t'>=STATUS': 4,\n\t},\n\tselect: {{ Tasks.taskFields }},\n\tstart: {{this.params.next}}\n}",
       "bodyFormData": [
         {
           "key": "<=CREATED_DATE",
@@ -61,8 +61,8 @@
     "messages": [],
     "jsonPathKeys": [
       " Tasks.taskFields ",
-      "Tasks.endDate",
-      "Tasks.startDate",
+      "Config.endDate",
+      "Config.startDate",
       "Users.users.map(u => u.id)",
       "this.params.next"
     ],

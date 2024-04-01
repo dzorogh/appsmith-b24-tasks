@@ -1,8 +1,7 @@
 export default {
 	tasks: [],
 	tasksFormatted: [],
-	startDate: moment(new Date()).day('1').format('YYYY-MM-DD'),
-	endDate: moment(new Date()).day('1').add('1', 'week').format('YYYY-MM-DD'),
+	
 	taskFields: [
 		'ID', 
 		'TITLE', 
@@ -23,16 +22,8 @@ export default {
 		'UF_AUTO_367625648403', // Приоритет
 		'UF_AUTO_931265952655'  // дата добавления в спринт
 	],
-	setStartDate: (value) => {
-		this.startDate = value;
-		this.endDate = moment(new Date()).add('1', 'week');
-	},
-	setEndDate: (value) => {
-		this.endDate = value;
-	},
-	get: async (startDate, endDate) => {
-		console.log('get', startDate, endDate);
-
+	
+	get: async () => {
 		this.tasks = []
 
 		const usersIds = Users.users.map(u => u.id);
@@ -41,8 +32,8 @@ export default {
 
 		if (!usersIds.length) return [];
 
-		await this.addFinishedTasks(startDate, usersIds)
-		await this.addUnfinishedTasks(startDate, endDate, usersIds)
+		await this.addFinishedTasks(usersIds)
+		await this.addUnfinishedTasks(usersIds)
 
 		this.formatTasks();
 		Users.aggregateTasks(this.tasksFormatted);
@@ -63,8 +54,8 @@ export default {
 			}};
 		})
 	},
-	addFinishedTasks: async (startDate, userIds) => {
-		console.log('addFinishedTasks', startDate, userIds)
+	addFinishedTasks: async (userIds) => {
+		console.log('addFinishedTasks', userIds)
 		let next = 1
 
 		do {
@@ -80,8 +71,8 @@ export default {
 
 		} while (next);
 	},
-	addUnfinishedTasks: async (startDate, endDate, userIds) => {
-		console.log('addUnfinishedTasks', startDate, endDate, userIds)
+	addUnfinishedTasks: async ( userIds) => {
+		console.log('addUnfinishedTasks', userIds)
 		let next = 1
 
 		do {

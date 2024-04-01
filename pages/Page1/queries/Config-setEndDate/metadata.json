@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "setEndDate",
-    "fullyQualifiedName": "Tasks.setEndDate",
+    "fullyQualifiedName": "Config.setEndDate",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_Tasks",
+    "collectionId": "Page1_Config",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -39,9 +39,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-31T14:38:06Z"
+    "createdAt": "2024-04-01T15:30:43Z"
   },
-  "id": "Page1_Tasks.setEndDate",
+  "id": "Page1_Config.setEndDate",
   "deleted": false,
-  "gitSyncId": "660973bfbef63765e88f048b_6609754ebef63765e88f04b1"
+  "gitSyncId": "660973bfbef63765e88f048b_660ad323bef63765e88f04cf"
 }

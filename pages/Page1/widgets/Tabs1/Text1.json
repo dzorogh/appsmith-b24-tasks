@@ -9,8 +9,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 8,
-    "bottomRow": 27,
+    "topRow": 0,
+    "bottomRow": 15,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 21.234375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 45,
+    "leftColumn": 23,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -31,7 +31,7 @@
     "text": "Todo:\n\nОтработано часов в эту неделю. \n\nСписок задач, в которых пользователь отработал за неделю.\n\nВсе потрачено часов в задачах.",
     "key": "uorcjd6i04",
     "isDeprecated": false,
-    "rightColumn": 58,
+    "rightColumn": 48,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "tgmojtuxri",
@@ -40,7 +40,7 @@
     "fontStyle": "BOLD",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "0",
+    "parentId": "8lpd4aexio",
     "tags": [
         "Suggested",
         "Content"
@@ -49,11 +49,11 @@
     "isLoading": false,
     "mobileTopRow": 72,
     "responsiveBehavior": "fill",
-    "originalTopRow": 8,
+    "originalTopRow": 0,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 33,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 27,
+    "originalBottomRow": 15,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

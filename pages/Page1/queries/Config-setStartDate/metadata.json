@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "addUnfinishedTasks",
-    "fullyQualifiedName": "Tasks.addUnfinishedTasks",
+    "name": "setStartDate",
+    "fullyQualifiedName": "Config.setStartDate",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_Tasks",
+    "collectionId": "Page1_Config",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "userIds"
+          "name": "value"
         }
       ]
     },
@@ -39,9 +39,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-31T14:38:06Z"
+    "createdAt": "2024-04-01T15:30:43Z"
   },
-  "id": "Page1_Tasks.addUnfinishedTasks",
+  "id": "Page1_Config.setStartDate",
   "deleted": false,
-  "gitSyncId": "660973bfbef63765e88f048b_6609754ebef63765e88f04b7"
+  "gitSyncId": "660973bfbef63765e88f048b_660ad323bef63765e88f04d1"
 }

@@ -24,7 +24,7 @@
       "queryParameters": [
         {
           "key": "UF_HEAD",
-          "value": "{{Users.headUserId}}"
+          "value": "{{Config.headUserId}}"
         }
       ],
       "body": "",
@@ -51,7 +51,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Users.headUserId"
+      "Config.headUserId"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

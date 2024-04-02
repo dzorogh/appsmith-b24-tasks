@@ -1,5 +1,5 @@
 export default {
-	headUserId: 5393,
+	
 	mainDepartmentId: null,
 
 	users: [],
@@ -61,6 +61,24 @@ export default {
 				tasksCount: userTasks.length,
 				finishedTasksCount: userTasks.filter(task => task.isFinished).length,
 				unfinishedTasksCount: userTasks.filter(task => !task.isFinished).length
+			}
+		});
+	},
+
+	aggregateElapsedItems(items) {
+		this.users = this.users.map((user) => {
+			const userItems = items.filter(task => task.userId == user.id); 
+
+			const elapsedMinutes = userItems.reduce((accumulator, item) => {
+				return accumulator + Number(item.minutes)
+			}, 0);
+
+			const elapsedTime = Util.formatDuration(elapsedMinutes, 'minutes');
+
+			return {
+				...user,
+				elapsedMinutes,
+				elapsedTime,
 			}
 		});
 	}

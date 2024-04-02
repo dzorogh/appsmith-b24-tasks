@@ -8,4 +8,5 @@ export default {
 	setEndDate: (value) => {
 		this.endDate = moment(value).format('YYYY-MM-DD');
 	},
+	headUserId: 5393
 }

@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 28,
+    "topRow": 4,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -20,12 +20,14 @@
         {"key": "primaryColumns.fullName.computedValue"},
         {"key": "primaryColumns.tasksCount.computedValue"},
         {"key": "primaryColumns.finishedTasksCount.computedValue"},
-        {"key": "primaryColumns.unfinishedTasksCount.computedValue"}
+        {"key": "primaryColumns.unfinishedTasksCount.computedValue"},
+        {"key": "primaryColumns.elapsedMinutes.computedValue"},
+        {"key": "primaryColumns.elapsedTime.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
     "delimiter": ",",
-    "defaultSelectedRowIndex": 0,
+    "defaultSelectedRowIndex": "null",
     "flexVerticalAlignment": "start",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisibleFilters": true,
@@ -62,12 +64,12 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1711987922954,
+    "columnUpdatedAt": 1711992878385,
     "originalBottomRow": 101,
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
     "mobileBottomRow": 40,
-    "widgetName": "Table1",
+    "widgetName": "TableUsers",
     "defaultPageSize": 0,
     "columnOrder": [
         "customColumn1",
@@ -77,27 +79,34 @@
         "fullName",
         "tasksCount",
         "finishedTasksCount",
-        "unfinishedTasksCount"
+        "unfinishedTasksCount",
+        "elapsedMinutes",
+        "elapsedTime"
     ],
-    "dynamicPropertyPathList": [{"key": "tableData"}],
+    "dynamicPropertyPathList": [
+        {"key": "tableData"},
+        {"key": "onRowSelected"}
+    ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 101,
+    "bottomRow": 80,
     "columnWidthMap": {
         "finishedTasksCount": 143,
         "tasksCount": 126,
+        "fullName": 201,
         "customColumn1": 70,
+        "elapsedMinutes": 163,
         "id": 69
     },
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 51,
     "parentColumnSpace": 21.234375,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
     "borderWidth": "1",
     "primaryColumns": {
         "firstName": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"firstName\"]))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"firstName\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "firstName",
@@ -131,7 +140,7 @@
             "verticalAlignment": "CENTER"
         },
         "lastName": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastName\"]))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastName\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "lastName",
@@ -165,7 +174,7 @@
             "verticalAlignment": "CENTER"
         },
         "unfinishedTasksCount": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"unfinishedTasksCount\"]))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"unfinishedTasksCount\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "unfinishedTasksCount",
@@ -199,7 +208,7 @@
             "verticalAlignment": "CENTER"
         },
         "finishedTasksCount": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"finishedTasksCount\"]))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"finishedTasksCount\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "finishedTasksCount",
@@ -233,7 +242,7 @@
             "verticalAlignment": "CENTER"
         },
         "fullName": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fullName\"]))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fullName\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "fullName",
@@ -267,7 +276,7 @@
             "verticalAlignment": "CENTER"
         },
         "tasksCount": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tasksCount\"]))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tasksCount\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "tasksCount",
@@ -301,7 +310,7 @@
             "verticalAlignment": "CENTER"
         },
         "customColumn1": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "#",
@@ -333,8 +342,42 @@
             "currencyCode": "USD",
             "verticalAlignment": "CENTER"
         },
+        "elapsedMinutes": {
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"elapsedMinutes\"]))}}",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "elapsedMinutes",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "elapsedMinutes",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 7,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "elapsedMinutes",
+            "fontStyle": "",
+            "textColor": "",
+            "columnType": "number",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "elapsedMinutes",
+            "currencyCode": "USD",
+            "cellBackground": "",
+            "verticalAlignment": "CENTER"
+        },
         "id": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "id",
@@ -363,8 +406,43 @@
             "originalId": "id",
             "currencyCode": "USD",
             "verticalAlignment": "CENTER"
+        },
+        "elapsedTime": {
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"elapsedTime\"]))}}",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "elapsedTime",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "elapsedTime",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 8,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "elapsedTime",
+            "fontStyle": "",
+            "textColor": "",
+            "columnType": "text",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "elapsedTime",
+            "currencyCode": "USD",
+            "cellBackground": "",
+            "verticalAlignment": "CENTER"
         }
     },
+    "onRowSelected": "{{Tasks.filterByUser(TableUsers.selectedRow.id)}} ",
     "key": "0n8yk8ugpn",
     "canFreezeColumn": true,
     "isDeprecated": false,
@@ -381,7 +459,7 @@
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": true,
     "responsiveBehavior": "fill",
-    "originalTopRow": 28,
+    "originalTopRow": 25,
     "mobileLeftColumn": 17,
     "isVisiblePagination": true,
     "verticalAlignment": "CENTER"

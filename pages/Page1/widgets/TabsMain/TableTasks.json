@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 0,
+    "topRow": 4,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -86,7 +86,7 @@
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
     "mobileBottomRow": 36,
-    "widgetName": "Table2",
+    "widgetName": "TableTasks",
     "defaultPageSize": 0,
     "columnOrder": [
         "id",
@@ -119,10 +119,11 @@
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
-        {"key": "primaryColumns.link.onClick"}
+        {"key": "primaryColumns.link.onClick"},
+        {"key": "onRowSelected"}
     ],
     "displayName": "Table",
-    "bottomRow": 73,
+    "bottomRow": 77,
     "columnWidthMap": {
         "link": 169,
         "id": 90,
@@ -134,11 +135,11 @@
     "hideCard": false,
     "mobileRightColumn": 64,
     "parentColumnSpace": 21.234375,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
     "borderWidth": "1",
     "primaryColumns": {
         "groupId": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupId\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupId\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "groupId",
@@ -169,7 +170,7 @@
             "verticalAlignment": "CENTER"
         },
         "creatorName": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"creatorName\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"creatorName\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "creatorName",
@@ -200,7 +201,7 @@
             "verticalAlignment": "CENTER"
         },
         "link": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link\"]))}}",
             "onClick": "{{}}",
             "isEditable": false,
             "notation": "standard",
@@ -233,7 +234,7 @@
             "verticalAlignment": "CENTER"
         },
         "title": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "title",
@@ -264,7 +265,7 @@
             "verticalAlignment": "CENTER"
         },
         "estimateHours": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"estimateHours\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"estimateHours\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "estimateHours",
@@ -295,7 +296,7 @@
             "verticalAlignment": "CENTER"
         },
         "durationType": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"durationType\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"durationType\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "durationType",
@@ -326,7 +327,7 @@
             "verticalAlignment": "CENTER"
         },
         "timeEstimate": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"timeEstimate\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"timeEstimate\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "timeEstimate",
@@ -357,7 +358,7 @@
             "verticalAlignment": "CENTER"
         },
         "responsible": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"responsible\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"responsible\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "responsible",
@@ -388,7 +389,7 @@
             "verticalAlignment": "CENTER"
         },
         "responsibleId": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"responsibleId\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"responsibleId\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "responsibleId",
@@ -419,7 +420,7 @@
             "verticalAlignment": "CENTER"
         },
         "id": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "id",
@@ -450,7 +451,7 @@
             "verticalAlignment": "CENTER"
         },
         "responsibleName": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"responsibleName\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"responsibleName\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "responsibleName",
@@ -481,7 +482,7 @@
             "verticalAlignment": "CENTER"
         },
         "ufAuto231937255950": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto231937255950\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto231937255950\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "ufAuto231937255950",
@@ -512,7 +513,7 @@
             "verticalAlignment": "CENTER"
         },
         "group": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"group\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"group\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "group",
@@ -543,7 +544,7 @@
             "verticalAlignment": "CENTER"
         },
         "ufAuto555825536710": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto555825536710\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto555825536710\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "ufAuto555825536710",
@@ -574,7 +575,7 @@
             "verticalAlignment": "CENTER"
         },
         "creator": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"creator\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"creator\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "creator",
@@ -605,7 +606,7 @@
             "verticalAlignment": "CENTER"
         },
         "ufAuto692505608773": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto692505608773\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto692505608773\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "ufAuto692505608773",
@@ -636,7 +637,7 @@
             "verticalAlignment": "CENTER"
         },
         "priority": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"priority\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"priority\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "priority",
@@ -667,7 +668,7 @@
             "verticalAlignment": "CENTER"
         },
         "isFinished": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isFinished\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isFinished\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "isFinished",
@@ -698,7 +699,7 @@
             "verticalAlignment": "CENTER"
         },
         "subStatus": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"subStatus\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"subStatus\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "subStatus",
@@ -729,7 +730,7 @@
             "verticalAlignment": "CENTER"
         },
         "ufAuto931265952655": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto931265952655\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto931265952655\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "ufAuto931265952655",
@@ -760,7 +761,7 @@
             "verticalAlignment": "CENTER"
         },
         "createdBy": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"createdBy\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"createdBy\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "createdBy",
@@ -791,7 +792,7 @@
             "verticalAlignment": "CENTER"
         },
         "closedDate": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"closedDate\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"closedDate\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "closedDate",
@@ -822,7 +823,7 @@
             "verticalAlignment": "CENTER"
         },
         "ufAuto367625648403": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto367625648403\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto367625648403\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "ufAuto367625648403",
@@ -853,7 +854,7 @@
             "verticalAlignment": "CENTER"
         },
         "durationPlan": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"durationPlan\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"durationPlan\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "durationPlan",
@@ -884,7 +885,7 @@
             "verticalAlignment": "CENTER"
         },
         "durationFact": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"durationFact\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"durationFact\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "durationFact",
@@ -915,7 +916,7 @@
             "verticalAlignment": "CENTER"
         },
         "status": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "status",
@@ -946,7 +947,7 @@
             "verticalAlignment": "CENTER"
         },
         "factHours": {
-            "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"factHours\"]))}}",
+            "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"factHours\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "factHours",
@@ -977,6 +978,7 @@
             "verticalAlignment": "CENTER"
         }
     },
+    "onRowSelected": "",
     "key": "l9win8ijb7",
     "canFreezeColumn": true,
     "isDeprecated": false,
@@ -984,7 +986,7 @@
     "textSize": "0.875rem",
     "widgetId": "bzvwl9w4kk",
     "minWidth": 450,
-    "tableData": "{{Tasks.tasksFormatted}}",
+    "tableData": "{{Tasks.tasksFilterred}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "ymz8jzo8de",

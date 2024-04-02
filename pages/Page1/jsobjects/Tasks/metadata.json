@@ -16,6 +16,10 @@
         "value": "[]"
       },
       {
+        "name": "tasksFilterred",
+        "value": "[]"
+      },
+      {
         "name": "taskFields",
         "value": "['ID', 'TITLE', 'PRIORITY', 'CREATED_BY', 'RESPONSIBLE_ID', 'CLOSED_DATE', 'DURATION_PLAN', 'DURATION_FACT', 'DURATION_TYPE', 'GROUP_ID', 'STATUS', 'CLOSED_DATE', 'TIME_ESTIMATE', 'UF_AUTO_231937255950', 'UF_AUTO_555825536710', 'UF_AUTO_692505608773', 'UF_AUTO_367625648403', 'UF_AUTO_931265952655']"
       }

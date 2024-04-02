@@ -3,12 +3,12 @@
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "mobileBottomRow": 15,
     "borderColor": "#E0DEDE",
-    "widgetName": "Tabs1",
+    "widgetName": "TabsMain",
     "isCanvas": true,
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
     "displayName": "Tabs",
-    "topRow": 0,
-    "bottomRow": 107,
+    "topRow": 11,
+    "bottomRow": 97,
     "parentRowSpace": 10,
     "type": "TABS_WIDGET",
     "hideCard": false,
@@ -21,7 +21,10 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "boxShadow"}
+        {"key": "boxShadow"},
+        {"key": "tabsObj.tab2.label"},
+        {"key": "tabsObj.tabv0rozgtyw7.label"},
+        {"key": "tabsObj.tab1.label"}
     ],
     "children": [
         {
@@ -31,7 +34,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas1",
             "displayName": "Canvas",
-            "bottomRow": 1030,
+            "bottomRow": 820,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -76,7 +79,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas2",
             "displayName": "Canvas",
-            "bottomRow": 1030,
+            "bottomRow": 820,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -122,7 +125,7 @@
             "widgetName": "Canvas3",
             "displayName": "Canvas",
             "topRow": 1,
-            "bottomRow": 1030,
+            "bottomRow": 820,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
             "canExtend": false,
@@ -176,7 +179,7 @@
             "widgetId": "8lpd4aexio",
             "positioning": "vertical",
             "index": 0,
-            "label": "Пользователи",
+            "label": "Пользователи {{ Users.users.length || '' }}",
             "id": "tab1",
             "isVisible": true
         },
@@ -184,14 +187,14 @@
             "widgetId": "9lsnefuxvx",
             "index": 2,
             "id": "tabv0rozgtyw7",
-            "label": "Затраченное время",
+            "label": "Затраченное время {{ ElapsedItems.elapsedItems.length  || ''  }}",
             "isVisible": true
         },
         "tab2": {
             "widgetId": "ymz8jzo8de",
             "positioning": "vertical",
             "index": 1,
-            "label": "Задачи",
+            "label": "Задачи {{ Tasks.tasks.length || ''  }}",
             "id": "tab2",
             "isVisible": true
         }
@@ -204,10 +207,10 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 0,
     "responsiveBehavior": "fill",
-    "originalTopRow": 0,
+    "originalTopRow": 11,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 107,
+    "originalBottomRow": 94,
     "minDynamicHeight": 15
 }

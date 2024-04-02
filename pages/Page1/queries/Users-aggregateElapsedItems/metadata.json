@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "formatDuration",
-    "fullyQualifiedName": "Util.formatDuration",
+    "name": "aggregateElapsedItems",
+    "fullyQualifiedName": "Users.aggregateElapsedItems",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_Util",
+    "collectionId": "Page1_Users",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,10 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "value"
-        },
-        {
-          "name": "unit"
+          "name": "items"
         }
       ]
     },
@@ -42,9 +39,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-29T23:44:59Z"
+    "createdAt": "2024-04-01T16:41:17Z"
   },
-  "id": "Page1_Util.formatDuration",
+  "id": "Page1_Users.aggregateElapsedItems",
   "deleted": false,
-  "gitSyncId": "6606b2e6b295c3387599f3ef_6607527b23efab3eee507162"
+  "gitSyncId": "6606b2e6b295c3387599f3ef_660ae3adbef63765e88f04e8"
 }

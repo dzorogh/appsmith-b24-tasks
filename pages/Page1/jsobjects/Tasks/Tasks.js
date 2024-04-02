@@ -1,7 +1,8 @@
 export default {
 	tasks: [],
 	tasksFormatted: [],
-	
+	tasksFilterred: [],
+
 	taskFields: [
 		'ID', 
 		'TITLE', 
@@ -22,7 +23,7 @@ export default {
 		'UF_AUTO_367625648403', // Приоритет
 		'UF_AUTO_931265952655'  // дата добавления в спринт
 	],
-	
+
 	get: async () => {
 		this.tasks = []
 
@@ -35,14 +36,15 @@ export default {
 		await this.addFinishedTasks(usersIds)
 		await this.addUnfinishedTasks(usersIds)
 
-		this.formatTasks();
+		this.formatAndFilterTasks();
 		Users.aggregateTasks(this.tasksFormatted);
 
 		console.log('Tasks', this.tasks, this.tasksFormatted);
 
 		return this.tasks;
 	},
-	formatTasks: () => {
+
+	formatAndFilterTasks: () => {
 		this.tasksFormatted = this.tasks.map((task) => {
 			return {...task, ...{
 				responsibleName: task.responsible.name,
@@ -52,8 +54,11 @@ export default {
 				estimateHours: Util.formatDuration(task.timeEstimate, 'seconds'),
 				isFinished: task.status == 4 || task.status == 5
 			}};
-		})
+		});
+
+		this.tasksFilterred = this.tasksFormatted;
 	},
+
 	addFinishedTasks: async (userIds) => {
 		console.log('addFinishedTasks', userIds)
 		let next = 1
@@ -71,6 +76,7 @@ export default {
 
 		} while (next);
 	},
+
 	addUnfinishedTasks: async ( userIds) => {
 		console.log('addUnfinishedTasks', userIds)
 		let next = 1
@@ -86,5 +92,15 @@ export default {
 			this.tasks = [...this.tasks, ...tasks]
 
 		} while (next);
+	},
+
+	filterByUser: (userId) => {
+		this.tasksFilterred = this.tasksFormatted.filter(task => task.responsibleId == userId);
+		console.log(TabsMain);
+	},
+
+	resetFilter: () => {
+		this.tasksFilterred = this.tasksFormatted;
+		TableUsers.setSelectedRowIndex(null);
 	}
 }

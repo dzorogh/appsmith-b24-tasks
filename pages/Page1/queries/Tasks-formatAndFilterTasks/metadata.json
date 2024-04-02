@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "formatTasks",
-    "fullyQualifiedName": "Tasks.formatTasks",
+    "name": "formatAndFilterTasks",
+    "fullyQualifiedName": "Tasks.formatAndFilterTasks",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-31T14:38:06Z"
+    "createdAt": "2024-04-01T17:23:00Z"
   },
-  "id": "Page1_Tasks.formatTasks",
+  "id": "Page1_Tasks.formatAndFilterTasks",
   "deleted": false,
-  "gitSyncId": "660973bfbef63765e88f048b_6609754ebef63765e88f04b9"
+  "gitSyncId": "6606b2e6b295c3387599f3ef_660aed74bef63765e88f04f0"
 }

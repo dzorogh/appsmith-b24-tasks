@@ -36,6 +36,8 @@ export default {
 			stopAt: item.DATE_STOP,
 		}));
 
+		Users.aggregateElapsedItems(this.elapsedItemsFormatted);
+		
 		return this.elapsedItemsFormatted;
 	}
 }

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "formatDuration",
-    "fullyQualifiedName": "Util.formatDuration",
+    "name": "changeTab",
+    "fullyQualifiedName": "Util.changeTab",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,10 +22,10 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "value"
+          "name": "tabObject"
         },
         {
-          "name": "unit"
+          "name": "tab"
         }
       ]
     },
@@ -42,9 +42,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-29T23:44:59Z"
+    "createdAt": "2024-04-01T17:32:56Z"
   },
-  "id": "Page1_Util.formatDuration",
+  "id": "Page1_Util.changeTab",
   "deleted": false,
-  "gitSyncId": "6606b2e6b295c3387599f3ef_6607527b23efab3eee507162"
+  "gitSyncId": "6606b2e6b295c3387599f3ef_660aefc8bef63765e88f04f5"
 }

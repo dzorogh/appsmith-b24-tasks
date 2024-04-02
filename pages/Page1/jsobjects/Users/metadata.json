@@ -8,10 +8,6 @@
     "archivedActions": [],
     "variables": [
       {
-        "name": "headUserId",
-        "value": "5393"
-      },
-      {
         "name": "mainDepartmentId",
         "value": "null"
       },

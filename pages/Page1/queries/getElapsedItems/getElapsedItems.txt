@@ -6,7 +6,7 @@
 	FILTER: {
 		'<=CREATED_DATE': {{Config.endDate}},
 		'>=CREATED_DATE': {{Config.startDate}},
-		'USER_ID': {{Users.users.map(u => u.id)}},
+		'USER_ID': {{Users.usersRaw.map(u => u.id)}},
 	},
 	
 	SELECT: ['*'],

@@ -1,12 +1,46 @@
 export default {
-	startDate: moment(new Date()).day('1').format('YYYY-MM-DD'),
-	endDate: moment(new Date()).day('7').format('YYYY-MM-DD'),
-	setStartDate: (value) => {
+	headUserId: 5393,
+
+	startDate: null,
+	endDate: null,
+
+	initialParams() {
+		moment.updateLocale("en", { week: {
+			dow: 1, // First day of week is Monday
+			doy: 4  // First week of year must contain 4 January (7 + 1 - 4)
+		}});
+
+		this.startDate = moment(new Date()).startOf('week').format('YYYY-MM-DD');
+		this.endDate = moment(new Date()).endOf('week').format('YYYY-MM-DD')
+	},
+
+	async setStartDate(value) {
 		this.startDate = value;
 		this.endDate = moment(value).day('7').format('YYYY-MM-DD');
+		// this.saveConfig();
+
+		await PageController.init()
 	},
-	setEndDate: (value) => {
+
+	async setEndDate(value) {
 		this.endDate = moment(value).format('YYYY-MM-DD');
+		// this.saveConfig();
+
+		await PageController.init()
 	},
-	headUserId: 5393
+
+
+	// async saveConfig() {
+	// await SaveConfig.run();
+	// },
+
+	// async loadConfig() {
+	// const result = await LoadConfig.run();
+	// if (result.startDate) {
+	// this.startDate = result.startDate
+	// }
+	// if (result.endDate) {
+	// this.endDate = result.endDate
+	// }
+	// }
 }

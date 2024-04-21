@@ -8,16 +8,16 @@
     "archivedActions": [],
     "variables": [
       {
+        "name": "headUserId",
+        "value": "5393"
+      },
+      {
         "name": "startDate",
-        "value": "moment(new Date()).day('1').format('YYYY-MM-DD')"
+        "value": "null"
       },
       {
         "name": "endDate",
-        "value": "moment(new Date()).day('7').format('YYYY-MM-DD')"
-      },
-      {
-        "name": "headUserId",
-        "value": "5393"
+        "value": "null"
       }
     ],
     "userPermissions": []

@@ -6,7 +6,7 @@
     "labelWidth": 5,
     "type": "DATE_PICKER_WIDGET2",
     "animateLoading": true,
-    "leftColumn": 12,
+    "leftColumn": 22,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -48,7 +48,7 @@
     "labelTextSize": "0.875rem",
     "defaultDate": "{{ Config.endDate }}",
     "isDeprecated": false,
-    "rightColumn": 23,
+    "rightColumn": 33,
     "widgetId": "7iyvkw01sd",
     "minWidth": 450,
     "label": "Дата окончания",

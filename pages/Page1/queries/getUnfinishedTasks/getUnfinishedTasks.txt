@@ -2,8 +2,8 @@
 	filter: {
 		'<=CREATED_DATE': {{Config.endDate}},
 		'<=STATUS': 3,
-		'RESPONSIBLE_ID': {{Users.users.map(u => u.id)}},
+		'RESPONSIBLE_ID': {{Users.usersFormatted.map(u => u.id)}},
 	},
-	select: {{ Tasks.taskFields }},
+	select: {{ Tasks.b24Fields }},
 	start: {{this.params.next}}
 }

@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "PageController",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "loading",
+        "value": "0"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_PageController",
+  "deleted": false,
+  "gitSyncId": "6606b2e6b295c3387599f3ef_6624fc19980de756c6446470"
+}

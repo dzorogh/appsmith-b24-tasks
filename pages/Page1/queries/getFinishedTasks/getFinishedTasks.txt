@@ -1,11 +1,10 @@
 {
 	filter: {
-
-		'<=CREATED_DATE': {{Config.endDate}},
+		'<=CLOSED_DATE': {{Config.endDate}},
 		'>=CLOSED_DATE': {{Config.startDate}},
-		'RESPONSIBLE_ID': {{Users.users.map(u => u.id)}},
+		'RESPONSIBLE_ID': {{Users.usersFormatted.map(u => u.id)}},
 		'>=STATUS': 4,
 	},
-	select: {{ Tasks.taskFields }},
+	select: {{ Tasks.b24Fields }},
 	start: {{this.params.next}}
 }

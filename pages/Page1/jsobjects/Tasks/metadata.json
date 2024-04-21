@@ -8,7 +8,7 @@
     "archivedActions": [],
     "variables": [
       {
-        "name": "tasks",
+        "name": "tasksRaw",
         "value": "[]"
       },
       {
@@ -20,8 +20,16 @@
         "value": "[]"
       },
       {
-        "name": "taskFields",
-        "value": "['ID', 'TITLE', 'PRIORITY', 'CREATED_BY', 'RESPONSIBLE_ID', 'CLOSED_DATE', 'DURATION_PLAN', 'DURATION_FACT', 'DURATION_TYPE', 'GROUP_ID', 'STATUS', 'CLOSED_DATE', 'TIME_ESTIMATE', 'UF_AUTO_231937255950', 'UF_AUTO_555825536710', 'UF_AUTO_692505608773', 'UF_AUTO_367625648403', 'UF_AUTO_931265952655']"
+        "name": "filters",
+        "value": "{}"
+      },
+      {
+        "name": "b24Fields",
+        "value": "['ID', 'TITLE', 'PRIORITY', 'CREATED_BY', 'RESPONSIBLE_ID', 'DURATION_PLAN', 'DURATION_FACT', 'DURATION_TYPE', 'GROUP_ID', 'STATUS', 'CLOSED_DATE', 'CREATED_DATE', 'TIME_ESTIMATE', 'UF_AUTO_231937255950', 'UF_AUTO_555825536710', 'UF_AUTO_692505608773', 'UF_AUTO_367625648403', 'UF_AUTO_931265952655']"
+      },
+      {
+        "name": "fields",
+        "value": "{\n  ID: 'id',\n  CREATOR: 'creator',\n  RESPONSIBLE: 'responsible',\n  RESPONSIBLE_ID: 'responsibleId',\n  DURATION_FACT: 'durationFact',\n  TIME_ESTIMATE: 'timeEstimate',\n  RESPONSIBLE_NAME: 'responsibleName',\n  CREATOR_NAME: 'creatorName',\n  LINK: 'link',\n  FACT_HOURS: 'factHours',\n  ESTIMATE_HOURS: 'estimateHours',\n  IS_FINISHED: 'isFinished',\n  UF_ADDED_TO_SPRINT: 'ufAuto931265952655',\n  ADDED_TO_SPRINT_AT: 'addedToSprintAt',\n  ADDED_TO_SPRINT_WEEKS_AGO: 'addedToSprintWeeksAgo',\n  STATUS: 'status'\n}"
       }
     ],
     "userPermissions": []

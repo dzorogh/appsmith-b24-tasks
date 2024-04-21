@@ -4,7 +4,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 4,
     "widgetName": "Button2",
-    "onClick": "{{Tasks.resetFilter()}}",
+    "onClick": "{{Tasks.resetFilters()}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [
         {"key": "onClick"},
@@ -31,8 +31,8 @@
         {"key": "borderRadius"},
         {"key": "isDisabled"}
     ],
-    "text": "Reset filter by user",
-    "isDisabled": "{{Tasks.tasks.length === Tasks.tasksFilterred.length}}",
+    "text": "Сбросить фильтр",
+    "isDisabled": "{{Object.keys(Tasks.filters).length === 0}}",
     "key": "yto0vkfgdp",
     "isDeprecated": false,
     "rightColumn": 64,

@@ -8,7 +8,11 @@
     "archivedActions": [],
     "variables": [
       {
-        "name": "elapsedItems",
+        "name": "isLoading",
+        "value": "false"
+      },
+      {
+        "name": "elapsedItemsRaw",
         "value": "[]"
       },
       {
@@ -16,8 +20,16 @@
         "value": "[]"
       },
       {
+        "name": "elapsedItemsFiltered",
+        "value": "[]"
+      },
+      {
         "name": "perPage",
         "value": "50"
+      },
+      {
+        "name": "filters",
+        "value": "{}"
       }
     ],
     "userPermissions": []

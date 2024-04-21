@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 970,
+          "bottomRow": 930,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -26,7 +26,21 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_PageController.init",
+              "name": "PageController.init",
+              "collectionId": "Page1_PageController",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  PageController.loading = 1;\n  Config.initialParams();\n  PageController.loading = 10;\n  await Users.reloadUsers();\n  PageController.loading = 20;\n  await Promise.all([Tasks.reloadTasks().then(() => PageController.loading += 40), ElapsedItems.reloadElapsedItems().then(() => PageController.loading += 40)]);\n  PageController.loading = 100;\n  setTimeout(() => {\n    PageController.loading = 0;\n  }, 500);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page1",

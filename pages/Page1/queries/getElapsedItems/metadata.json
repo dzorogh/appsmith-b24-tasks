@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\tORDER: {\n\t\tID: 'ASC'\n\t},\n\t\n\tFILTER: {\n\t\t'<=CREATED_DATE': {{Config.endDate}},\n\t\t'>=CREATED_DATE': {{Config.startDate}},\n\t\t'USER_ID': {{Users.users.map(u => u.id)}},\n\t},\n\t\n\tSELECT: ['*'],\n\n\tPARAMS: {\n\t\tNAV_PARAMS: {\n\t\t\tnPageSize: {{ this.params.perPage }},\n\t\t\tiNumPage: {{ this.params.page }}\n\t\t}\n\t},\n\n}",
+      "body": "{\n\tORDER: {\n\t\tID: 'ASC'\n\t},\n\t\n\tFILTER: {\n\t\t'<=CREATED_DATE': {{Config.endDate}},\n\t\t'>=CREATED_DATE': {{Config.startDate}},\n\t\t'USER_ID': {{Users.usersRaw.map(u => u.id)}},\n\t},\n\t\n\tSELECT: ['*'],\n\n\tPARAMS: {\n\t\tNAV_PARAMS: {\n\t\t\tnPageSize: {{ this.params.perPage }},\n\t\t\tiNumPage: {{ this.params.page }}\n\t\t}\n\t},\n\n}",
       "bodyFormData": [
         {
           "key": "<=CREATED_DATE",
@@ -64,7 +64,7 @@
       " this.params.perPage ",
       "Config.endDate",
       "Config.startDate",
-      "Users.users.map(u => u.id)"
+      "Users.usersRaw.map(u => u.id)"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

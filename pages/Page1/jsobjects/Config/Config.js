@@ -10,8 +10,14 @@ export default {
 			doy: 4  // First week of year must contain 4 January (7 + 1 - 4)
 		}});
 
-		this.startDate = moment(new Date()).startOf('week').format('YYYY-MM-DD');
-		this.endDate = moment(new Date()).endOf('week').format('YYYY-MM-DD')
+		if (!this.startDate) {
+			this.startDate = moment(new Date()).startOf('week').format('YYYY-MM-DD');
+		}
+
+		if (!this.endDate) {
+			this.endDate = moment(new Date()).endOf('week').format('YYYY-MM-DD')
+		}
+
 	},
 
 	async setStartDate(value) {

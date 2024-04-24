@@ -7,8 +7,8 @@
     "isCanvas": true,
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
     "displayName": "Tabs",
-    "topRow": 14,
-    "bottomRow": 93,
+    "topRow": 13,
+    "bottomRow": 96,
     "parentRowSpace": 10,
     "type": "TABS_WIDGET",
     "hideCard": false,
@@ -24,7 +24,8 @@
         {"key": "boxShadow"},
         {"key": "tabsObj.tab2.label"},
         {"key": "tabsObj.tabv0rozgtyw7.label"},
-        {"key": "tabsObj.tab1.label"}
+        {"key": "tabsObj.tab1.label"},
+        {"key": "tabsObj.tabk8ozmrp2lq.label"}
     ],
     "children": [
         {
@@ -79,7 +80,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas2",
             "displayName": "Canvas",
-            "bottomRow": 770,
+            "bottomRow": 790,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -125,7 +126,7 @@
             "widgetName": "Canvas3",
             "displayName": "Canvas",
             "topRow": 1,
-            "bottomRow": 750,
+            "bottomRow": 790,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
             "canExtend": false,
@@ -160,6 +161,51 @@
             "maxDynamicHeight": 9000,
             "minDynamicHeight": 4,
             "flexLayers": []
+        },
+        {
+            "needsErrorInfo": false,
+            "tabId": "tabk8ozmrp2lq",
+            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+            "mobileBottomRow": 861,
+            "widgetName": "Canvas4",
+            "displayName": "Canvas",
+            "topRow": 1,
+            "bottomRow": 790,
+            "parentRowSpace": 1,
+            "type": "CANVAS_WIDGET",
+            "canExtend": false,
+            "hideCard": true,
+            "minHeight": 860,
+            "mobileRightColumn": 1337.765625,
+            "parentColumnSpace": 1,
+            "dynamicTriggerPathList": [],
+            "leftColumn": 0,
+            "dynamicBindingPathList": [
+                {"key": "borderRadius"},
+                {"key": "boxShadow"},
+                {"key": "tabName"}
+            ],
+            "key": "7ugkwdxqqp",
+            "isDeprecated": false,
+            "tabName": "Проекты {{ Projects.projectsRaw.length || ''  }}",
+            "rightColumn": 1337.765625,
+            "detachFromLayout": true,
+            "dynamicHeight": "AUTO_HEIGHT",
+            "widgetId": "7jk9mgpprf",
+            "containerStyle": "none",
+            "minWidth": 450,
+            "isVisible": true,
+            "version": 1,
+            "parentId": "pgzz4q7ni6",
+            "renderMode": "CANVAS",
+            "isLoading": false,
+            "mobileTopRow": 1,
+            "responsiveBehavior": "fill",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "mobileLeftColumn": 0,
+            "maxDynamicHeight": 9000,
+            "minDynamicHeight": 4,
+            "flexLayers": []
         }
     ],
     "borderWidth": 1,
@@ -175,9 +221,18 @@
     "shouldShowTabs": true,
     "minWidth": 450,
     "tabsObj": {
+        "tabk8ozmrp2lq": {
+            "widgetId": "7jk9mgpprf",
+            "isDuplicateLabel": false,
+            "index": 1,
+            "id": "tabk8ozmrp2lq",
+            "label": "Проекты {{ Projects.projectsRaw.length || ''  }}",
+            "isVisible": true
+        },
         "tab1": {
             "widgetId": "8lpd4aexio",
             "positioning": "vertical",
+            "isDuplicateLabel": false,
             "index": 0,
             "label": "Пользователи {{ Users.usersFormatted.length || '' }}",
             "id": "tab1",
@@ -185,7 +240,8 @@
         },
         "tabv0rozgtyw7": {
             "widgetId": "9lsnefuxvx",
-            "index": 2,
+            "isDuplicateLabel": false,
+            "index": 3,
             "id": "tabv0rozgtyw7",
             "label": "Затраченное время {{ ElapsedItems.elapsedItemsFiltered.length  || ''  }}",
             "isVisible": true
@@ -193,7 +249,8 @@
         "tab2": {
             "widgetId": "ymz8jzo8de",
             "positioning": "vertical",
-            "index": 1,
+            "isDuplicateLabel": false,
+            "index": 2,
             "label": "Задачи {{ Tasks.tasksFilterred.length || ''  }}",
             "id": "tab2",
             "isVisible": true
@@ -207,10 +264,10 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 0,
     "responsiveBehavior": "fill",
-    "originalTopRow": 14,
+    "originalTopRow": 13,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 100,
+    "originalBottomRow": 90,
     "minDynamicHeight": 15
 }

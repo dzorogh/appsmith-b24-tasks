@@ -9,9 +9,12 @@ export default {
 		this.loading = 20;
 
 		await Promise.all([
-			Tasks.reloadTasks().then(() => this.loading += 40),
-			ElapsedItems.reloadElapsedItems().then(() => this.loading += 40)
+			Tasks.reloadTasks().then(() => this.loading += 30),
+
+			ElapsedItems.reloadElapsedItems().then(() => this.loading += 30)
 		]);
+
+		await Projects.reloadProjects();
 
 		this.loading = 100;
 

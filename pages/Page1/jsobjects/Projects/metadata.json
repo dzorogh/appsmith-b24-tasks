@@ -1,0 +1,32 @@
+{
+  "unpublishedCollection": {
+    "name": "Projects",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "projectsRaw",
+        "value": "[]"
+      },
+      {
+        "name": "filters",
+        "value": "{}"
+      },
+      {
+        "name": "b24Fields",
+        "value": "[]"
+      },
+      {
+        "name": "fields",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_Projects",
+  "deleted": false,
+  "gitSyncId": "6606b2e6b295c3387599f3ef_66275e2fe5ad2d4c102d89b1"
+}

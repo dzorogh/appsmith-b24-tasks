@@ -92,7 +92,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1713702969016,
+    "columnUpdatedAt": 1713942726855,
     "originalBottomRow": 78,
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -151,7 +151,9 @@
         "title": 601,
         "isFinished": 117,
         "responsibleName": 203,
-        "addedToSprintAt": 188
+        "estimateHours": 150,
+        "addedToSprintAt": 188,
+        "factHours": 148
     },
     "parentRowSpace": 10,
     "hideCard": false,

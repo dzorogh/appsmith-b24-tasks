@@ -1,0 +1,5 @@
+{
+	FILTER: {
+		ID: {{ Tasks.tasksFormatted.map(task => task.groupId) }}
+	}
+}

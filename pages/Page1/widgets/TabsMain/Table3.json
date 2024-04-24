@@ -67,7 +67,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1713703124200,
+    "columnUpdatedAt": 1713859003525,
     "originalBottomRow": 124,
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -77,7 +77,6 @@
     "columnOrder": [
         "userFullName",
         "customColumn1",
-        "taskTitle",
         "comment",
         "taskUrl",
         "taskId",
@@ -86,7 +85,8 @@
         "minutes",
         "createdAt",
         "startAt",
-        "stopAt"
+        "stopAt",
+        "taskTitle"
     ],
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "displayName": "Table",

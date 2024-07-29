@@ -59,7 +59,7 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onDateSelected": "{{ Config.setEndDate(StartDatePicker.formattedDate) }}",
+  "onDateSelected": "{{ Config.setEndDate(EndDatePicker.formattedDate) }}",
   "originalBottomRow": 19,
   "originalTopRow": 15,
   "parentColumnSpace": 21.234375,

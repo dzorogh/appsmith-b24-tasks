@@ -66,17 +66,19 @@
     "addedToSprintAt",
     "ufAuto819843634784",
     "createdDate",
-    "ufTaskWebdavFiles"
+    "ufTaskWebdavFiles",
+    "ufAuto275592234333"
   ],
-  "columnUpdatedAt": 1713942726855,
+  "columnUpdatedAt": 1715077766093,
   "columnWidthMap": {
     "addedToSprintAt": 188,
+    "addedToSprintWeeksAgo": 112,
     "closedDate": 254,
-    "estimateHours": 150,
-    "factHours": 148,
+    "estimateHours": 136,
+    "factHours": 108,
     "id": 90,
-    "isFinished": 117,
-    "link": 169,
+    "isFinished": 113,
+    "link": 221,
     "responsibleName": 203,
     "title": 601
   },
@@ -210,6 +212,9 @@
     },
     {
       "key": "primaryColumns.ufTaskWebdavFiles.computedValue"
+    },
+    {
+      "key": "primaryColumns.ufAuto275592234333.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -1156,6 +1161,40 @@
       "label": "ufAuto231937255950",
       "notation": "standard",
       "originalId": "ufAuto231937255950",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "ufAuto275592234333": {
+      "alias": "ufAuto275592234333",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{TableTasks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ufAuto275592234333\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "ufAuto275592234333",
+      "index": 19,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ufAuto275592234333",
+      "notation": "standard",
+      "originalId": "ufAuto275592234333",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

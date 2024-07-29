@@ -25,14 +25,14 @@ export default {
 		this.endDate = moment(value).day('7').format('YYYY-MM-DD');
 		// this.saveConfig();
 
-		await PageController.init()
+		//await PageController.init()
 	},
 
 	async setEndDate(value) {
-		this.endDate = moment(value).format('YYYY-MM-DD');
+		this.endDate = value;
 		// this.saveConfig();
 
-		await PageController.init()
+		//await PageController.init()
 	},
 
 

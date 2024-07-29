@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/rest/5393/2665dhje211enuin/department.get",
+      "path": "/department.get",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -38,6 +38,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [
+      {
+        "key": "path"
+      },
       {
         "key": "queryParameters[0].value"
       }

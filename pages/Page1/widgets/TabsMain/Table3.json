@@ -41,10 +41,9 @@
     "minutes",
     "createdAt",
     "startAt",
-    "stopAt",
-    "taskTitle"
+    "stopAt"
   ],
-  "columnUpdatedAt": 1715584067381,
+  "columnUpdatedAt": 1722265050753,
   "columnWidthMap": {
     "comment": 528,
     "createdAt": 219,
@@ -114,9 +113,6 @@
     },
     {
       "key": "primaryColumns.taskUrl.computedValue"
-    },
-    {
-      "key": "primaryColumns.taskTitle.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -418,40 +414,6 @@
       "label": "taskId",
       "notation": "standard",
       "originalId": "taskId",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "taskTitle": {
-      "alias": "taskTitle",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"taskTitle\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "taskTitle",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "taskTitle",
-      "notation": "standard",
-      "originalId": "taskTitle",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

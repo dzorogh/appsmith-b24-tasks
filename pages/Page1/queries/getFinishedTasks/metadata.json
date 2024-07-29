@@ -30,7 +30,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/rest/5393/2665dhje211enuin/tasks.task.list",
+      "path": "/tasks.task.list",
       "pluginSpecifiedTemplates": [
         {
           "value": true

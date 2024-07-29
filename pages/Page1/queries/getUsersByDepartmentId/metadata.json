@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/rest/5393/2665dhje211enuin/user.get",
+      "path": "/user.get",
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -30,7 +30,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/rest/5393/2665dhje211enuin/task.elapseditem.getlist",
+      "path": "/task.elapseditem.getlist",
       "pluginSpecifiedTemplates": [
         {
           "value": true

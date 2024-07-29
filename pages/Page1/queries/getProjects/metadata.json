@@ -21,7 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/rest/5393/2665dhje211enuin/sonet_group.get",
+      "path": "/sonet_group.get",
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -1,57 +1,32 @@
 {
+  "gitSyncId": "6606b2e6b295c3387599f3ef_6606b2e6b295c3387599f3f1",
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
+          "bottomRow": 960,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 960,
-          "containerStyle": "none",
           "snapRows": 124,
-          "parentRowSpace": 1,
+          "topRow": 0,
           "type": "CANVAS_WIDGET",
-          "canExtend": true,
           "version": 89,
-          "minHeight": 1292,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Page1_PageController.init",
-              "name": "PageController.init",
-              "collectionId": "Page1_PageController",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  PageController.loading = 1;\n  Config.initialParams();\n  PageController.loading = 10;\n  await Users.reloadUsers();\n  PageController.loading = 20;\n  await Promise.all([Tasks.reloadTasks().then(() => PageController.loading += 30), ElapsedItems.reloadElapsedItems().then(() => PageController.loading += 30)]);\n  await Projects.reloadProjects();\n  PageController.loading = 100;\n  setTimeout(() => {\n    PageController.loading = 0;\n  }, 500);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Page1",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": []
-  },
-  "deleted": false,
-  "gitSyncId": "6606b2e6b295c3387599f3ef_6606b2e6b295c3387599f3f1"
+    "name": "Page1",
+    "slug": "page1"
+  }
 }

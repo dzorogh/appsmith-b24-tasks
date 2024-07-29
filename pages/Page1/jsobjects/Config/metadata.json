@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "660973bfbef63765e88f048b_660ad2ffbef63765e88f04cd",
+  "id": "Page1_Config",
   "unpublishedCollection": {
     "name": "Config",
     "pageId": "Page1",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "headUserId",
@@ -19,10 +19,6 @@
         "name": "endDate",
         "value": "null"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Page1_Config",
-  "deleted": false,
-  "gitSyncId": "660973bfbef63765e88f048b_660ad2ffbef63765e88f04cd"
+    ]
+  }
 }

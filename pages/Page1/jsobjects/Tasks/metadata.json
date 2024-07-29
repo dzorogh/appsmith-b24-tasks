@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "6606b2e6b295c3387599f3ef_6606f038b295c3387599f42e",
+  "id": "Page1_Tasks",
   "unpublishedCollection": {
     "name": "Tasks",
     "pageId": "Page1",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "tasksRaw",
@@ -31,10 +31,6 @@
         "name": "fields",
         "value": "{\n  ID: 'id',\n  CREATOR: 'creator',\n  RESPONSIBLE: 'responsible',\n  RESPONSIBLE_ID: 'responsibleId',\n  DURATION_FACT: 'durationFact',\n  TIME_ESTIMATE: 'timeEstimate',\n  RESPONSIBLE_NAME: 'responsibleName',\n  CREATOR_NAME: 'creatorName',\n  LINK: 'link',\n  FACT_HOURS: 'factHours',\n  ESTIMATE_HOURS: 'estimateHours',\n  IS_FINISHED: 'isFinished',\n  UF_ADDED_TO_SPRINT: 'ufAuto931265952655',\n  ADDED_TO_SPRINT_AT: 'addedToSprintAt',\n  ADDED_TO_SPRINT_WEEKS_AGO: 'addedToSprintWeeksAgo',\n  STATUS: 'status'\n}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Page1_Tasks",
-  "deleted": false,
-  "gitSyncId": "6606b2e6b295c3387599f3ef_6606f038b295c3387599f42e"
+    ]
+  }
 }

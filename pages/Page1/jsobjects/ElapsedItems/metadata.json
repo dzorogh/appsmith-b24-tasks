@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "660973bfbef63765e88f048b_660a8b65bef63765e88f04c2",
+  "id": "Page1_ElapsedItems",
   "unpublishedCollection": {
     "name": "ElapsedItems",
     "pageId": "Page1",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "isLoading",
@@ -31,10 +31,6 @@
         "name": "filters",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Page1_ElapsedItems",
-  "deleted": false,
-  "gitSyncId": "660973bfbef63765e88f048b_660a8b65bef63765e88f04c2"
+    ]
+  }
 }

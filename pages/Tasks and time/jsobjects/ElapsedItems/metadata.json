@@ -1,0 +1,36 @@
+{
+  "gitSyncId": "660973bfbef63765e88f048b_660a8b65bef63765e88f04c2",
+  "id": "Tasks and time_ElapsedItems",
+  "unpublishedCollection": {
+    "name": "ElapsedItems",
+    "pageId": "Tasks and time",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "isLoading",
+        "value": "false"
+      },
+      {
+        "name": "elapsedItemsRaw",
+        "value": "[]"
+      },
+      {
+        "name": "elapsedItemsFormatted",
+        "value": "[]"
+      },
+      {
+        "name": "elapsedItemsFiltered",
+        "value": "[]"
+      },
+      {
+        "name": "perPage",
+        "value": "50"
+      },
+      {
+        "name": "filters",
+        "value": "{}"
+      }
+    ]
+  }
+}

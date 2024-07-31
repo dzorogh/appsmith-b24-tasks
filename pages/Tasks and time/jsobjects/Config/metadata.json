@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "660973bfbef63765e88f048b_660ad2ffbef63765e88f04cd",
+  "id": "Tasks and time_Config",
+  "unpublishedCollection": {
+    "name": "Config",
+    "pageId": "Tasks and time",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "headUserId",
+        "value": "5393"
+      },
+      {
+        "name": "startDate",
+        "value": "null"
+      },
+      {
+        "name": "endDate",
+        "value": "null"
+      }
+    ]
+  }
+}

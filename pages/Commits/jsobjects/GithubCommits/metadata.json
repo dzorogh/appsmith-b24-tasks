@@ -1,0 +1,52 @@
+{
+  "gitSyncId": "66a89891160932167eca217d_23f8e40e-09b2-4aec-9d61-e11581f81ce4",
+  "id": "Commits_GithubCommits",
+  "unpublishedCollection": {
+    "name": "GithubCommits",
+    "pageId": "Commits",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "startDate",
+        "value": "\"\""
+      },
+      {
+        "name": "endDate",
+        "value": "\"\""
+      },
+      {
+        "name": "_page",
+        "value": "1"
+      },
+      {
+        "name": "_repo",
+        "value": "\"\""
+      },
+      {
+        "name": "_ref",
+        "value": "\"\""
+      },
+      {
+        "name": "users",
+        "value": "[]"
+      },
+      {
+        "name": "repos",
+        "value": "[]"
+      },
+      {
+        "name": "commits",
+        "value": "[]"
+      },
+      {
+        "name": "commitsFormatted",
+        "value": "[]"
+      },
+      {
+        "name": "authors",
+        "value": "[]"
+      }
+    ]
+  }
+}

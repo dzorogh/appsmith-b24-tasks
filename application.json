@@ -20,8 +20,12 @@
   "icon": "coding",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Tasks and time",
       "isDefault": true
+    },
+    {
+      "id": "Commits",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

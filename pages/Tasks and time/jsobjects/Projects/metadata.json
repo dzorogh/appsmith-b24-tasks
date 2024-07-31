@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "6606b2e6b295c3387599f3ef_66275e2fe5ad2d4c102d89b1",
+  "id": "Tasks and time_Projects",
+  "unpublishedCollection": {
+    "name": "Projects",
+    "pageId": "Tasks and time",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "projectsRaw",
+        "value": "[]"
+      },
+      {
+        "name": "filters",
+        "value": "{}"
+      },
+      {
+        "name": "b24Fields",
+        "value": "[]"
+      },
+      {
+        "name": "fields",
+        "value": "{}"
+      }
+    ]
+  }
+}
